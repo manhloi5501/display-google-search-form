@@ -1,12 +1,25 @@
 .header{
     height: 100px;
-    background-color: red;
+    background-color: transparent;
 }
-.header__navbar{
+
+.header__navbar-list{
     display: flex;
+    list-style: none;
+    width: 12%;
+    margin: 20px;
     justify-content: flex-end;
-    align-items: center;
-    
+    float: right;
+}
+.header__navbar-item{
+    margin: auto;
+    color: var(--text-color);
+}
+.header__navbar-link{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 .header__navbar-user{
     border: 0;
