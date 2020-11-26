@@ -30,3 +30,86 @@
     background-repeat: no-repeat;
     background-size: contain;  
 }
+.container{
+    background-color: transparent;
+    height: 500px;
+    position: relative;
+}
+
+.body__logo{
+    text-align: center;
+}
+.body__logo-img{
+    max-width: 500px;
+}
+/* body form */
+.body__form{
+    text-align: center;
+}
+.form__searchbox{
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+    width: 40%;
+    margin: auto;
+    border-radius: 40px;
+    padding: 10px;
+    position: relative;
+    border: 1px solid rgb(234,235,238);
+}
+.form__searchbox-icon{  
+    font-size: 1.4rem;
+    padding: 0 10px;
+    color: var(--icon-color);
+}
+.form__searchbox-input{
+    min-width: 300px;
+    width: 450px;
+    outline: none;
+    border: 0;
+}
+.form__searchbox-icon-wrap{
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin: 0 10px;
+}
+.form__searchbox-history-list{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* background-color: rgba(255, 0, 0, 0.185); */
+    width: 100%;
+    top: 25px;
+    left: 0;
+    list-style: none;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid  rgb(234,235,238);
+    text-align: left;
+    border-top: none;
+    display: none;
+}
+.form__searchbox-input:focus ~ .form__searchbox-history-list{
+    display: block;
+}
+.form__searchbox-history-link{
+    text-decoration: none;
+    padding: 4px;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--history-text);
+}
+.form__searchbox-history-item{
+    padding: 4px 0;
+}
+.form__searchbox-history-item:hover{
+    background-color: rgb(194, 194, 194);
+}
+.form__searchbox-history-icon{
+    font-size: 1.4rem;
+    color: var(--icon-color);
+    margin-right: 8px;
+}

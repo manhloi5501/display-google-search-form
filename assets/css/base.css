@@ -1,6 +1,7 @@
 :root{
     --text-color: rgb(33,33,33);
-    --icon-color: rgb(33,33,33);
+    --icon-color: rgb(160,166,172);
+    --history-text: rgb(99,47,141);
 }
 *{
     margin: 0;
